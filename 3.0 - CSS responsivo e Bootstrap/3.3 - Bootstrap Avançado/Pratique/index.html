@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./lib/bootstrap.min.css">
+    <title>Projeto Bootstrap Avançado</title>
+</head>
+
+<body>
+
+    <header>
+        <div class="navbar navbar-expand-lg">
+            <div class="container">
+                <h1>Sneakers house</h1>
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <nav class="collapse navbar-collapse justify-content-end" id="menu">
+                    <ul class="nav navbar-nav nav-pills">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#">Início</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " href="#">Produtos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " href="#">Promoções</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " href="#">Contato</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <div class="container container-grid"> 
+        <h2>O lugar onde você encontra seu estílo</h2>
+        <div class="row">
+            <div class="col-4">
+                <div class="card text-bg-dark">
+                    <img src="https://cdn.pixabay.com/photo/2020/04/09/09/30/nike-5020612_1280.jpg" height="350px" />
+                    <div class="card-img-overlay">
+                        <h4 class="card-title">Sobre a loja</h4>
+                        <p class="card-text">
+                            Somos apaixonados por sneakers e contamos com as melhores marcas e parceiros,
+                            visando trazer exclusividade para os sneakerheads, Somos os principais parceiros
+                            estratégicos dos players globais: Nike, Jordan Brand, adidas, Vans, Puma. Com isso,
+                            além da enorme responsabilidade em elevar e democratizar a cultura sneaker no Brasil,
+                            trazemos sempre em primeira mão todos os lançamentos globais, produtos exclusivos,
+                            com a mais alta tecnologia e qualidade.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <img src="./lib/banner-who-we-are___b939e680be35909947097783000bda39.jpg" width="700px" height="300px"
+                    alt="">
+            </div>
+
+            <div class="col">
+                <h5>Adidas Originais</h5>
+                <img src="https://cdn.pixabay.com/photo/2020/07/19/05/34/adidas-5418998_960_720.jpg" width="300px"
+                    height="300px" alt="">
+            </div>
+            <div class="col">
+                <h5>Nike Air</h5>
+                <img src="https://cdn.pixabay.com/photo/2019/01/26/22/48/nike-3957127_1280.jpg" width="380px"
+                    height="300px" alt="">
+            </div>
+            <div class="col">
+                <h5>Air Jordan</h5>
+                <img src="https://cdn.pixabay.com/photo/2020/07/19/05/31/nike-5418992_960_720.jpg" width="380px"
+                    height="300px" alt="">
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container">
+        <div id="carousel-ctrl" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div data-bs-interval="3000" class="carousel-item active">
+                    <img src="https://cdn.pixabay.com/photo/2016/11/21/15/54/countryside-1846093_1280.jpg"
+                        width="1000px" height="500px">
+                        <div class="carousel-caption">
+                            <h2>Running</h2>
+                        </div>
+                </div>
+                <div data-bs-interval="3000" carousel slide class="carousel-item">
+                    <img src="https://cdn.pixabay.com/photo/2015/10/29/01/24/shoes-1011596_1280.jpg" width="1000px"
+                        height="500px">
+                        <div class="carousel-caption">
+                            <h2>Basquete</h2>
+                        </div>
+                </div>
+                <div data-bs-interval="3000" carousel slide class="carousel-item">
+                    <img src="https://cdn.pixabay.com/photo/2020/05/03/19/09/nike-5126389_1280.jpg" width="1000px"
+                        height="500px">
+                        <div class="carousel-caption">
+                            <h2>Casual</h2>
+                        </div>
+                </div>
+            </div>
+
+            <button data-bs-target="#carousel-ctrl" data-bs-slide="prev" class="carousel-control-prev" type="button">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+
+            <button data-bs-target="#carousel-ctrl" data-bs-slide="next" class="carousel-control-next" type="button">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carousel-ctrl" class="active" data-bs-slide-to="0">
+                <button type="button" data-bs-target="#carousel-ctrl" data-bs-slide-to="1">
+                <button type="button" data-bs-target="#carousel-ctrl" data-bs-slide-to="2">
+                    </button>
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+
+
+    <script src="./lib/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
