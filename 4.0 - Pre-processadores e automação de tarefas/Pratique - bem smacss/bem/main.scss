@@ -1,4 +1,4 @@
-@use 'reset' ;
+@use 'reset';
 
 .produtos {
     max-width: 640px;
@@ -10,21 +10,20 @@
 }
 
 .produto {
-
-    &-imagem {
+    &__imagem {
         width: 100%;
     }
 
-    &-nome {
+    &__nome {
         font-size: 1.2em;
-    margin: 8px 0;
+        margin: 8px 0;
     }
 
-    &-descricao {
+    &__descricao {
         color: gray;
     }
 
-    &.em-destaque { 
+    &--em-destaque {
         border: 2px solid gold;
         padding: 8px;
         background-color: #ffff42;
